@@ -23,6 +23,7 @@ export default function Home({videos}: IProps) {
     )
 }
 
+
 export const getServerSideProps = async ({query: {topic}}: {query: {topic: string}}) => {
     let response;
     if (topic) {
